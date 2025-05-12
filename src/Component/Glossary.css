@@ -1,0 +1,70 @@
+.glossary-overview {
+  padding: 90px 0 50px;
+}
+.gloss {
+  margin-bottom: 55px;
+  font-family: "Chakra Petch", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-size: 37px;
+  line-height: 48px;
+  font-weight: 600;
+  color: #03224f;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 83.43px;
+}
+.glossaryImage {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+.glossqn {
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-family: "Chakra Petch", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-size: 17px;
+  line-height: 22px;
+  color: #03224f;
+}
+.excerpt {
+  margin-bottom: 16px;
+  color: #03224f;
+  opacity: 0.6;
+  font-family: "Chakra Petch", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-size: 17px;
+  line-height: 22px;
+}
+.author {
+  display: flex;
+}
+.teamLogo {
+  width: 16px !important;
+  height: auto !important;
+  margin-right: 8.58px;
+  box-shadow: none;
+  margin-bottom: 20px;
+}
+.glossTeam {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400px;
+  font-size: 13px;
+  line-height: 15.23px;
+  color: #03224f;
+  opacity: 0.6;
+}
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
