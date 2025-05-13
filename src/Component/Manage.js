@@ -20,9 +20,10 @@ function Manage() {
               <br />
               Everything you need in one place for your team.
             </p>
-            <button type="button">
-              <i className="fas fa-arrow-right"></i> Get Started
+            <button type="button" className="custom-button">
+              <i className="fas fa-arrow-right"></i> <span className="get-started-text">Get Started</span>
             </button>
+
           </div>
 
           {/* Right Section */}

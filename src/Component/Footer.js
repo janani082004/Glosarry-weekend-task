@@ -1,5 +1,6 @@
 import { Container } from "react-bootstrap";
 import logo from './img/breeze-logo.svg';
+import chrome from './img/chrome.png';
 import './Footer.css';
 export default function Footer() {
   return (
@@ -7,9 +8,10 @@ export default function Footer() {
       <Container>
         <div className="footer-logo">
           <img src={logo} alt="Breeze Logo" />
-          <div className="logo-line"></div>
         </div>
-
+      </Container>
+      <div className="logo-line"></div>
+      <Container>
         <div className="footer-container">
           <div className="footer-column features-col">
             <h4 className="feature">Features</h4>
@@ -25,6 +27,11 @@ export default function Footer() {
                   <li>Media</li>
                 </ul>
               </div>
+
+            </div>
+          </div>
+          <div className="footer-column features-col">
+            <div className="features-columns">
               <div class="features-col">
                 <ul>
                   <li>Environment</li>
@@ -38,7 +45,6 @@ export default function Footer() {
               </div>
             </div>
           </div>
-
           <div className="footer-column company-col">
             <h5 className="feature" id="featured">Company</h5>
             <ul>
@@ -50,20 +56,18 @@ export default function Footer() {
           <div className="footer-column chrome-col">
             <div className="footer-column chrome-col1">
               <img
-                src="https://www.gstatic.com/images/branding/product/2x/chrome_64dp.png"
+                src={chrome}
                 alt="Chrome"
                 className="chrome-logo"
               />
-              <p className="gray-text">
-                Available in the<br />
-                <span className="white-text">Chrome Web Store</span>
-              </p>
             </div>
             <h3 className="reviews">Check out our 9 reviews</h3>
             <p className="stars">★★★★☆</p>
           </div>
         </div>
-
+      </Container>
+      <div className="logo-line"></div>
+      <Container>
         <div className="footer-bottom">
           <div className="bot">
             <h4>© SCube.co</h4>

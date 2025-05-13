@@ -39,7 +39,7 @@
   padding: 12px 24px;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-size: 13px;
-  line-height: 18px;
+  line-height: 15px;
   border: none;
   cursor: pointer;
   font-style: normal;
@@ -47,11 +47,19 @@
   border-radius: 5px;
   transition: background 0.3s;
 }
+.manage-left button:hover {
+  background-color: #011026;
+}
 
+.manage-left button:hover .get-started-text {
+  color: white;
+}
+.manage-left button i :hover {
+  color: inherit;
+}
 .manage-left button i {
   font-size: 1rem;
 }
-
 .manage-right {
   display: flex;
   flex-direction: column;

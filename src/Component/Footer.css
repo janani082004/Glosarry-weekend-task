@@ -1,13 +1,14 @@
 .footer {
   background-color: #081120;
   color: #fff;
-  padding: 40px 20px;
+  padding-top: 40px;
+
   font-family: "Arial", sans-serif;
 }
 
 .footer-logo {
   text-align: left;
-  margin: 20px auto 30px 0;
+  margin: 20px auto 0px 0;
 }
 
 .logo-line {
@@ -20,16 +21,20 @@
 }
 
 .footer-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   justify-content: space-between;
   align-items: flex-start;
+  padding-top: 52px;
+  padding-bottom: 52px;
   flex-wrap: wrap;
   gap: 30px;
   margin: auto;
   text-align: left;
 }
 
-.feature {
+.feature,
+#featured {
   min-height: 40px;
   margin-bottom: 20px;
   color: #fff;
@@ -38,6 +43,7 @@
   font-weight: 700;
   font-size: 23px;
   line-height: 30px;
+  display: inline-block;
 }
 .features-col {
   flex: 1;
@@ -45,22 +51,11 @@
 }
 
 .company-col {
-  min-width: 250px;
   text-align: start;
 }
 
 .chrome-col {
-  min-width: 250px;
   text-align: right;
-}
-
-.features-columns {
-  display: flex;
-  flex-wrap: nowrap;
-}
-
-.features-columns .features-col {
-  flex: 1;
 }
 
 .features-columns ul {
@@ -68,22 +63,17 @@
   padding: 0;
   margin: 0;
 }
+.features-col:nth-child(2) {
+  padding-top: 60px;
+}
 
 .features-columns ul li {
-  margin-bottom: 6px;
   color: #bbb;
   font-size: 18px;
   line-height: 22px;
+  margin-bottom: 20px;
   font-family: "Chakra Petch", Arial, Helvetica, sans-serif;
   font-weight: 400;
-}
-
-.footer-column .feature {
-  font-size: 32px;
-  color: rgb(255, 255, 255);
-  line-height: 30px;
-  font-weight: 700;
-  font-family: "Chakra Petch", Arial, Helvetica, sans-serif;
 }
 
 .footer-column h5 {
@@ -104,7 +94,7 @@
   color: #aaa;
 }
 .footer-column.company-col ul li {
-  margin-bottom: 6px;
+  margin-bottom: 20px;
   color: #bbb;
   font-size: 18px;
   font-family: "Chakra Petch", Arial, Helvetica, sans-serif;
@@ -114,15 +104,14 @@
 .footer-column.chrome-col1 {
   display: flex;
   gap: 5px;
-  margin-bottom: 6px;
   color: #bbb;
   font-size: 18px;
   font-family: "Chakra Petch", Arial, Helvetica, sans-serif;
   font-weight: 400;
 }
 .chrome-logo {
-  width: 50px;
-  margin-bottom: 10px;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 .gray-text {
@@ -136,12 +125,13 @@
 }
 
 .reviews {
-  margin-bottom: 6px;
   color: white;
-  font-size: 25px;
+  font-size: 22px;
   font-family: "Chakra Petch", Arial, Helvetica, sans-serif;
   font-weight: 700;
   text-align: left;
+  line-height: 30px;
+  margin-bottom: 20px;
 }
 
 .stars {
@@ -158,9 +148,10 @@
 }
 
 .footer-bottom {
-  border-top: 1px solid #333;
-  margin-top: 30px;
-  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+
+  padding: 60px 0px;
   text-align: center;
   font-size: 17px;
   font-family: "Chakra Petch", Arial, Helvetica, sans-serif;
@@ -169,7 +160,6 @@
 }
 
 .footer-bottom p {
-  width: 70%;
   text-align: left;
   margin: 5px 0;
   color: rgb(255, 255, 255);
@@ -214,6 +204,13 @@
   line-height: 22px;
 }
 @media (max-width: 767px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .features-col:nth-child(2) {
+    padding: 0;
+  }
   .features-columns {
     display: block; /* Flex remove */
     gap: 0; /* Gap remove */
